@@ -92,8 +92,7 @@ function myAdder(x, y) {
 //         places using .toFixed(2).
 
 function distance(x1, y1, x2, y2) {
-  // Write your code here
-
+  return(Math.sqrt((x2-x1)**2+(y2-y1)**2));
 }
 
 
@@ -107,8 +106,7 @@ function distance(x1, y1, x2, y2) {
 //         Example: tipCalc(50, 20) → tip is 10, total is "60.00"
 
 function tipCalc(bill, tipPercent) {
-  // Write your code here
-
+  return((bill+(bill*(tipPercent/100))).toFixed(2));
 }
 
 
