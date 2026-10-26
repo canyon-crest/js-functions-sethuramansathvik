@@ -56,8 +56,10 @@ function myFunc() {
 // STEP 3: Return the random number.
 
 function getRandomNum(max) {
-  // Write your code here
-
+  if(isNaN(max)||max<1) {
+    return 0;
+  }
+  return(Math.floor(Math.random()*max)+1);
 }
 
 
@@ -69,7 +71,10 @@ function getRandomNum(max) {
 //         The click handler already converts them for you.
 
 function myAdder(x, y) {
-  // Write your code here
+  if (isNaN(x)||isNaN(y)) {
+    return(console.error());
+  }
+  return(x+y);
 
 }
 
